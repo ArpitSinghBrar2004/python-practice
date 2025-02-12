@@ -1,16 +1,22 @@
-num = int(input("Enter the number you want to check: "))
-print(f"Number you entered: {num}")
+# Function to generate Fibonacci sequence
+def fibonacci(n):
+    fibonacci_sequence = []  # List to store the sequence
+    a, b = 0, 1  # Initialize the first two terms
 
-if num > 1:
-    is_prime = True  # Assume the number is prime initially
-    for i in range(2, num):
-        if num % i == 0:
-            print(f"{num} is not a prime number.")
-            is_prime = False
-            break  # Exit the loop as soon as we find a divisor
-    if is_prime:
-        print(f"{num} is a prime number.")
-elif num == 1:
-    print("1 is not a prime number.")
+    # Generate the sequence
+    for _ in range(n):
+        fibonacci_sequence.append(a)  # Add the current term to the list
+        a, b = b, a + b  # Update the terms for the next iteration
+
+    return fibonacci_sequence
+
+# Input: Number of terms
+num = int(input("Enter the number of terms: "))
+
+# Generate and print the Fibonacci sequence
+if num <= 0:
+    print("Please enter a positive integer.")
 else:
-    print("Please enter a positive integer greater than 1.")
+    fib_sequence = fibonacci(num)
+    print("Fibonacci sequence:")
+    print(", ".join(map(str, fib_sequence)))
