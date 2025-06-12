@@ -1,0 +1,12 @@
+number=[10,3,4,5,6,2,10,4]
+print(type(number))
+number.append(69)
+print(number)
+number.insert(5,3)
+print(number)
+number.remove(5)
+print(number)
+number.sort()
+print(number)
+number.reverse()
+print(number)

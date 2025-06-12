@@ -1,0 +1,12 @@
+number={10,3,4,5,6,2,10,4}
+print(type(number))
+number.add(90)
+print(number)
+number.remove(4)
+print(number)
+number.update()
+print(number)
+pop_number=number.pop()
+print(pop_number)
+number.clear()
+print(number)
