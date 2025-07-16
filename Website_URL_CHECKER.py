@@ -1,7 +1,6 @@
 # Website_URL_CHECKER
 print("🔍Website URL CHECKER🔍")
 url=input("\n💻Enter the URL:")
-
 if url.startswith("https://"):
     print("🔐This Website uses HTTPS (secure)")
 elif url.startswith("http://"):

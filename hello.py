@@ -39,3 +39,12 @@
 # ket(address)
 # value(898)
 # items(key+value)
+# i=2
+# while i<=10:
+#     print("hello")
+#     i=i+1
+# li=[1,2,3,4,5,5,6,6,7,7,]
+#   *
+#  ***
+# ******
+
